@@ -20,7 +20,7 @@ func TestMatchName(t *testing.T) {
 func TestMatchCommand(t *testing.T) {
 	i := Default()
 	for cmd, want := range map[string]bool{
-		`C:\Users\a\Documents\maltrack\maltrack.exe`:           true,
+		`C:\Users\a\Documents\maltrack\maltrack.exe`:            true,
 		`"C:\Users\a\AppData\Roaming\MalTrack\maltrack.exe" -x`: true,
 		`C:\Users\a\Downloads\mal-track.exe`:                    true,
 		`C:\Windows\explorer.exe`:                               false,
